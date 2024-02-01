@@ -1,0 +1,21 @@
+/* The h1 below is referred to as the "selector". it winstructs
+the CSS to apply the following lines of styles that are selected*/
+
+h1 {
+    /*background-color in the statment below is referred to as the "property" and red is refreed to as the value*/
+
+    background-color: red;
+    border: 3px solid blue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 25vw;
+    margin: 0 auto;
+
+}
+
+
+
+
+
