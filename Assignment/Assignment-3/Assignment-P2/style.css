@@ -5,7 +5,7 @@ html {
   /* Your CSS below here */
 
   div{
-    background-color: red;
+    
     width: 200px;
     height: 100px;
     display: flex;
@@ -18,7 +18,8 @@ html {
     text-shadow: 1px 1px 2px white;
     border-radius: 5px;
     border: 1px solid black;
-
+    background: linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%); 
+    background-color: red;
 
 
 
