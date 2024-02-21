@@ -1,0 +1,25 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+
+  div{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    font-size: 1.125rem;
+    color: black; 
+    text-shadow: 1px 1px 2px white;
+
+
+
+
+
+
+  }
