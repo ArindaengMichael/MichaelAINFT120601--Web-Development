@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    background-color: rgb(204, 203, 203);
   }
   
   body {
@@ -11,9 +12,10 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
     line-height: 1.6;
-    text-indent: 20px;
+    
     letter-spacing: 1px;
     word-spacing: 1px;
+    
     
   }
   
@@ -22,6 +24,7 @@
   section {
     float: left;
     width: 50%;
+    text-indent: 20px;
   }
   
   aside {
@@ -71,3 +74,20 @@
     padding: 25;
   
  }
+
+ a {
+  color: #a66; 
+  
+}
+
+a:visited{
+  color: red
+}
+
+a:hover{
+  color:red
+}
+
+a:focus{
+  color:yellow
+}
