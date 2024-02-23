@@ -91,3 +91,8 @@ a:hover{
 a:focus{
   color:yellow
 }
+
+a.external-link{
+  background-image: url('C:\Users\Guess\Documents\1School\Web\GitHub\MichaelAINFT120601--Web-Development\Assignment\Assignment-3\Assignment-P3\external-link-52.png');
+
+}
