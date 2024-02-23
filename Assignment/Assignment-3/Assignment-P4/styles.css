@@ -3,6 +3,7 @@ body {
     color: #490303;
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+    font-style: italic;
   }
 
   img {
@@ -18,6 +19,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-style: italic;
+    text-decoration: wavy;
   }
   
   .grid {
@@ -25,6 +27,7 @@ body {
     padding: 0 20px;
     max-width: 980px;
     display: flex;
+    
   }
   
   nav {
@@ -53,6 +56,8 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
   }
 
   .feature {
