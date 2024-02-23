@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    /* background-color: rgb(204, 203, 203); */
+    /* background-color: rgb(204, 203, 203);  */
   }
   
   body {
@@ -66,7 +66,7 @@
  }
 
  h2{
-    font-size: 1.8em;
+    font-size: 2em;
     padding: 25;
     font-style: italic;
     @font-face {
@@ -105,4 +105,46 @@ a.external-link {
   background-position: right center;
   padding-right: 20px; 
   text-decoration: none; 
+}
+
+ul{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ol{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul li, ol li{
+  line-height: 1.6;
+}
+
+
+ nav {
+  border: 1px solid #d83636; 
+  border-radius: 1px; 
+  padding: 5px; 
+  text-align: center;
+  font-size: 16px;
+}
+
+
+nav ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block; 
+  margin-bottom: 50px; 
+  padding: 10px; 
+  border: 1px solid #e73e3e; 
+  border-radius: 5px; 
+}
+
+nav li:last-child {
+  margin-bottom: 0; 
 }
