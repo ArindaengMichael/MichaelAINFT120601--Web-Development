@@ -1,0 +1,31 @@
+<!-- 
+    Week 11
+    Forms
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Handling Forms</title>
+    <style>
+        /* Your CSS styles can go here */
+    </style>
+</head>
+<body>
+    <h1>Handling Forms</h1>
+    <h2>Summer Events</h2>
+    <form class="event form"
+    onsubmit="handleFormSubmit(e)">
+        <label for="eventName">Event Name:</label>
+        <input type="text" name="eventName" autoComplete="off" />
+        <label for="eventDetails">Event Details:</label>
+        <input type="text" name="eventDetails" autoComplete="off" />
+        <label for="eventDate">Event Date:</label>
+        <input type="text" name="eventDate" autoComplete="off" />
+        <input type="submit" value="Add NEW Summer event"/>
+    </form>
+    <div class="summer-events"></div>
+</body>
+</html>
+
+
