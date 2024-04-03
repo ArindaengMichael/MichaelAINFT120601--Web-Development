@@ -12,3 +12,24 @@ const insertX = ["YapYap THE DESTOYER", "Spartian 117", "Batman" ];
 const insertY = ["The Halo Ring", "Super Earth", "The Void"];
 const insertZ = ["spontaneously combusted", "got pulled into a black hole ", "got taken by Batman"];
 
+function result() {
+  let newStory = storyText;
+
+  const xItem = randomValueFromArray();
+  const yItem = randomValueFromArray();
+  const ZItem = randomValueFromArray();
+
+  if(customName.value !== '') {
+    const name = customName.value;
+
+  }
+
+  if(document.getElementById("uk").checked) {
+    const weight = Math.round(300);
+    const temperature =  Math.round(94);
+
+  }
+
+  story.textContent = ;
+  story.style.visibility = 'visible';
+}
