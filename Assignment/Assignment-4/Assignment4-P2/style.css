@@ -6,6 +6,7 @@ h1 {
 body {
   width: 640px;
   margin: 0 auto;
+  background-color: crimson;
 }
 
 .full-img {
@@ -40,4 +41,5 @@ button {
   width: 20%;
   float: left;
   cursor: pointer;
-}
+} 
+
