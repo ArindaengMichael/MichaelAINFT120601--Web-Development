@@ -15,9 +15,11 @@ const insertZ = ["spontaneously combusted", "got pulled into a black hole ", "go
 function result() {
   let newStory = storyText;
 
-  const xItem = randomValueFromArray();
-  const yItem = randomValueFromArray();
-  const ZItem = randomValueFromArray();
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const ZItem = randomValueFromArray(insertZ);
+
+  newStory = newStory.replaceAll(":insertx:", xItem).replace(":inserty:", yItem).replace(":insertz:", ZItem);
 
   if(customName.value !== '') {
     const name = customName.value;
