@@ -2,6 +2,7 @@ const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
+randomize.addEventListener('click', result);
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
@@ -37,3 +38,4 @@ function result() {
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
+
