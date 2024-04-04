@@ -32,6 +32,8 @@ class Ball {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.fill();
   }
+
+  //Updateing balls data 
   update() {
     if ((this.x + this.size) >= width) {
       this.velX = -(this.velX);
@@ -53,6 +55,7 @@ class Ball {
     this.y += this.velY;
   }
 
+  //Adding collision detection
    collisionDetect() {
     for (const ball of balls) {
       if (this !== ball) {
@@ -84,6 +87,22 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+//Animating the Balls 
+function loop() {
+  ctx.fillStyle = "rgb(0 0 0 / 25%)";
+  ctx.fillRect(0, 0, width, height);
+
+  for (const ball of balls) {
+    ball.draw();
+    ball.update();
+    ball.collisionDetect();
+  }
+
+  requestAnimationFrame(loop);
+}
+
+//Looping the anmiation 
+loop();
 
 
 
