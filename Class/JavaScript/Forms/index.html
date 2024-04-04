@@ -3,29 +3,43 @@
     Forms
  -->
 
- <!DOCTYPE html>
-<html>
-<head>
-    <title>Handling Forms</title>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
     <style>
-        /* Your CSS styles can go here */
+      .event-form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+      }
     </style>
-</head>
-<body>
+    <title>Handling Forms</title>
+  </head>
+  <body>
     <h1>Handling Forms</h1>
     <h2>Summer Events</h2>
-    <form class="event form"
-    onsubmit="handleFormSubmit(e)">
-        <label for="eventName">Event Name:</label>
-        <input type="text" name="eventName" autoComplete="off" />
-        <label for="eventDetails">Event Details:</label>
-        <input type="text" name="eventDetails" autoComplete="off" />
-        <label for="eventDate">Event Date:</label>
-        <input type="text" name="eventDate" autoComplete="off" />
-        <input type="submit" value="Add NEW Summer event"/>
+    <form
+      id="event-form"
+      class="event-form"
+      onsubmit="handleFormSubmit(); return false;"
+    >
+      <label for="eventName">Event Name:</label>
+      <input type="text" name="eventName" autocomplete="off" />
+      <label for="eventDetails">Event Details:</label>
+      <textarea type="text" name="eventDetails" autocomplete="off"></textarea>
+      <label for="eventName">Event Organizer Email:</label>
+      <input type="text" name="eventEmail" autocomplete="off" />
+      <label for="eventDate">Event Date:</label>
+      <input type="date" name="eventDate" autocomplete="off" />
+      <input type="submit" value="Add New Summer Event!" />
     </form>
     <div class="summer-events"></div>
-</body>
+  </body>
 </html>
 
 
