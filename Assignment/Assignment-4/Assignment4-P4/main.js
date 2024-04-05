@@ -78,8 +78,9 @@ class EvilCircle extends Shape {
     super(x, y, 20, 20);
 
     this.color = "white";
-    this.size = 10;
+    this.size = 15;
 
+   
     window.addEventListener('keydown', (e) => {
       switch(e.key) {
         case 'a':
@@ -149,6 +150,8 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
 }
 
 function loop() {
