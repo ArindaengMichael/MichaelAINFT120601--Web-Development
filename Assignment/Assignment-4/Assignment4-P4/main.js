@@ -42,4 +42,40 @@ class Ball extends Shape {
     ctx.fill();
   }
 
+  update() {
+    if (this.x + this.size >= width) {
+      this.velX = -Math.abs(this.velX);
+    }
+
+    if (this.x - this.size <= 0) {
+      this.velX = Math.abs(this.velX);
+    }
+
+    if (this.y + this.size >= height) {
+      this.velY = -Math.abs(this.velY);
+    }
+
+    if (this.y - this.size <= 0) {
+      this.velY = Math.abs(this.velY);
+    }
+
+    this.x += this.velX;
+    this.y += this.velY;
+  }
+
+  
+  collisionDetect() {
+    for (const ball of balls) {
+      if (!(this === ball) && ball.exists) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          ball.color = this.color = randomRGB();
+        }
+      }
+    }
+  }
 }
+
