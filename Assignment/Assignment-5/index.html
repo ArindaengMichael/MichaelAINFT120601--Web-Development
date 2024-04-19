@@ -101,45 +101,33 @@ In this assignment we are tasked with editing each file to fit accessibility on 
           <div class="show-hide" role="button" aria-expanded="false" tabindex="0">Show comments</div>
           <div class="comment-wrapper" aria-expanded="false">
 
-          <div class="comment-wrapper">
-
-            <font size="6">Add comment</font>
-
+            <h3>Add comment</h3>
             <form class="comment-form">
               <div class="flex-pair">
-                Your name:
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Your name">
               </div>
               <div class="flex-pair">
-                Your comment:
-                <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+                <label for="comment">Your comment:</label>
+                <input type="text" name="comment" id="comment" placeholder="Enter your comment" aria-label="Your comment">
               </div>
               <div>
-                <input type="submit" value="Submit comment">
+                <input type="submit" value="Submit comment" aria-label="Submit comment">
               </div>
             </form>
-
-            <font size="6">Comments</font>
-
+            <h3>Comments</h3>
             <ul class="comment-container">
-
               <li>
-
                 <p>Bob Fossil</p>
-
                 <p>Oh I am so glad you taught me all about the big brown angry guys in the woods. With their sniffing little noses and their bad attitudes, they can sure be a menace — I was thinking of putting them all in a truck and driving them outta here. I run a zoo, you know.</p>
-
               </li>
-
             </ul>
-
           </div>
         </section>
       </article>
 
       <div class="secondary">
-        <font size="6">Related</font>
-
+        <h2>Related</h2>
         <ul>
           <li><a href="#">The trouble with Bees</a></li>
           <li><a href="#">The trouble with Otters</a></li>
