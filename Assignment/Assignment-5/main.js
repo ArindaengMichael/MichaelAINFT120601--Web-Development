@@ -24,7 +24,7 @@ showHideBtn.onclick = function() {
   updateAriaExpanded();
 };
 
-// functionality for adding a new comment via the comments form
+
 
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
@@ -53,3 +53,12 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+
+const formInputs = document.querySelectorAll('.comment-form input');
+formInputs.forEach(input => {
+  input.setAttribute('aria-label', input.placeholder);
+});
+showHideBtn.setAttribute('aria-label', 'Toggle comments');
+
+
