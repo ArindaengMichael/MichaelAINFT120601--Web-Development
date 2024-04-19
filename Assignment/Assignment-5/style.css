@@ -10,6 +10,15 @@ html {
   background-color: #898989;
 }
 
+caption {
+  font-size: 1.8rem; 
+  font-weight: bold; 
+  text-align: center; 
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-bottom: 2px solid #ccc; 
+}
+
 body {
   width: 80%;
   min-width: 1024px;
@@ -251,3 +260,4 @@ audio {
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
+
